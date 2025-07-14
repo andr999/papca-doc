@@ -10,3 +10,5 @@ DATABASES = {
         'PORT': os.environ.get('DB_PORT', '5432'),
     }
 }
+ALLOWED_HOSTS = ['.onrender.com']  # разреши хост Render
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # для collectstatic
